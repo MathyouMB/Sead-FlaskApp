@@ -6,26 +6,79 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+      <link rel="stylesheet" type="text/css" href="style.css">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>test</title>
+
+      <style>
+            .banner{
+                
+                background-color:#26a69a;
+                /*z-index: -1; /* hide shadow behind image */
+                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); 
+                height: 100px;
+               /* width: 70%; 
+                /*left: 15%; /* one half of the remaining 30% */
+
+
+               
+             }
+ 
+             .container{
+                /* text-align: center;*/
+             }
+
+             .nowCenter{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+             }
+
+             img.logo{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+
+             }
+             
+             .bodyC{
+               
+                 padding-left: 200px;
+                 padding-right: 200px;
+                 padding-top: 50px;
+                 padding-bottom: 100px;
+
+             }
+
+
+       </style>
+
     </head>
         
     <body>
+      <div class="banner">
+        <img class ="logo" src="http://prints.ultracoloringpages.com/d4d7b4c866cc025c0ef04dee8962862a.png" alt="Smiley face" height="100" width="100">
+        <!--<h1>ok</h1>-->
+      </div>
       <div class="container">
-            <h2 class="form-submit-heading">Enter Document Url</h2>
-          <form class="form-submit" method="post" action="/forward">
+         <!--   <h2 class="form-submit-heading">Enter Document Url</h2>-->
+          <form class="form-submit bodyC" method="post" action="/forward">
             <!--<h2 class="form-signin-heading">Enter Document Url</h2>-->
             <div class="form-group">
-              <label for="inputName" class="sr-only">Enter Document Url</label>
-              <input type="text" id="inputName" name="name" class="form-control" placeholder="Document Url" required autofocus>
+            <!--<label for="inputName" class="sr-only">Enter Document Url</label>-->
+              <input type="text" id="inputName" name="name" class="form-control" placeholder="Document" required autofocus>
             </div>
            <!-- <div class="form-group">
               <label for="comment" class="sr-only">Comment:</label>
                 <textarea class="form-control" name="comment" rows="1" id="comment" placeholder="Comment" required></textarea>
             </div>-->
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Enter</button>
+            <br>
+            <br>    
+            <button class="btn btn-lg btn-primary btn-block nowCenter" type="submit">Enter</button>
           </form>
       </div>
       <!--JavaScript at end of body for optimized loading-->

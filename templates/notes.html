@@ -6,20 +6,80 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+      <link rel="stylesheet" type="text/css" href="style.css">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>test</title>
+
+      <style>
+            .banner{
+                
+                background-color:#26a69a;
+                /*z-index: -1; /* hide shadow behind image */
+                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); 
+                height: 100px;
+               /* width: 70%; 
+                /*left: 15%; /* one half of the remaining 30% */
+
+
+               
+             }
+ 
+             .containerT{
+                text-align: center;
+             }
+
+             .B1{
+                text-align: center;
+                position: fixed;
+                top: 65%;
+                left: 45.3%;
+             }
+             .B2{
+                text-align: center;
+                position: fixed;
+                top: 70%;
+                left: 45%;
+             }
+
+             img.logo{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+
+             }
+             
+             .bodyC{
+               
+                 padding-left: 200px;
+                 padding-right: 200px;
+                 padding-top: 50px;
+                 padding-bottom: 100px;
+
+             }
+
+
+       </style>
+
     </head>
         
     <body>
+        <div class="banner">
+            <img class ="logo" src="http://prints.ultracoloringpages.com/d4d7b4c866cc025c0ef04dee8962862a.png" alt="Smiley face" height="100" width="100">
+                    <!--<h1>ok</h1>-->
+         </div>
+    <br>
+    <br>
+    <br>
       <div class="container">
-            <h2 class="form-submit-heading">{{ note }}</h2>
+            <h2 class="form-submit-heading containerT">{{ note }}</h2>
             <form method="post" action="/forward">
-                 <button class="btn btn-lg btn-primary btn-block" type="submit">Forward</button>
+                 <button class="btn btn-lg btn-primary btn-block B1" type="submit">Forward</button>
             </form>
             <form method="post" action="/backward">
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Backward</button>
+                <button class="btn btn-lg btn-primary btn-block B2" type="submit">Backward</button>
             </form>
             
           </form>

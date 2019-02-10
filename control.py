@@ -16,7 +16,8 @@ def forward():
     if (notes == []):
         notes = readText.returnText(request.form['name'])
     print(notes)
-    location +=1
+    if(location+1 < len(notes)):
+        location +=1
     return render_template('notes.html', note=notes[location])
 
 @app.route('/backward', methods=['POST'])
@@ -26,7 +27,8 @@ def backward():
     if (notes == []):
         notes = readText.returnText(request.form['name'])
     print(notes)
-    location -=1
+    if(location-1 >= 0):
+        location -=1
     return render_template('notes.html', note=notes[location])
 
 if __name__ == '__main__':
