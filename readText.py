@@ -1,10 +1,11 @@
+import time
 def returnText(name):
-    #file = open("demoText.txt", "w")
-    #file.write(name)
+    file = open("demoText.txt", "w")
+    file.write(name.replace("\n",""))
+    file.close()
     text = open("demoText.txt","r").readlines()
-    print(text)
     return (text)
 
 def returnNotes(notes):
-    print(notes)
-    return notes
+    text = open("demoText.txt","r").readlines()
+    return (text)
